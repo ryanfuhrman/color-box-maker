@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import uuid from "uuid";
 
 export default class NewBoxForm extends Component {
   constructor(props) {
@@ -7,6 +8,7 @@ export default class NewBoxForm extends Component {
       backgroundColor: "",
       height: "",
       width: "",
+      id: uuid(),
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -26,6 +28,7 @@ export default class NewBoxForm extends Component {
       backgroundColor: "",
       height: "",
       width: "",
+      id: uuid(),
     });
   }
 
